@@ -29,17 +29,23 @@ public:
 
 	void alphabeticaly_sort() {
 
+		if (dictionary.empty()) { cout << "Dictionary is empty" << endl; return; }
+
 		sort(dictionary, dictionary.size(), ALPHABETYCAL);
 
 	}
 
 	void numerical_sort() {
 
+		if (dictionary.empty()) { cout << "Dictionary is empty" << endl; return; }
+
 		sort(dictionary, dictionary.size(), NUMERICAL);
 
 	}
 
 	void show_dictionary() {
+
+		if (dictionary.empty()) { cout << "Dictionary is empty" << endl; return; }
 
 		for (auto& pair : dictionary) { cout << pair.first << ": " << pair.second << endl; }
 

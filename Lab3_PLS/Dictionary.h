@@ -16,9 +16,9 @@ private:
     void remove_punctuation(string& text) {
 
         string modified_text;
-        // Перебираем все символы в строке
+
         for (char c : text) {
-            // Если символ не является знаком пунктуации, добавляем его к результату
+
             if (!ispunct(static_cast<unsigned char>(c))) {
                 modified_text += c;
             }
@@ -29,8 +29,9 @@ private:
     }
 
     void to_lower(string& text) {
+
         string modified_text = text;
-        // Преобразуем каждый символ в строке к нижнему регистру
+
         transform(modified_text.begin(), modified_text.end(), modified_text.begin(), ::tolower);
 
         text = modified_text;
