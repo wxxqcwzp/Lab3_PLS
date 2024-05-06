@@ -2,7 +2,7 @@
 
 #include "Dictionary.h"
 #include "Dictionary_manager.h"
-#include "Utils.h"
+#include "Sort.h"
 #include "Inputs.h"
 
 using namespace std;

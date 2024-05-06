@@ -1,11 +1,4 @@
-#include "Dictionary.h"
-#include "Dictionary_manager.h"
-#include "Inputs.h"
-
 #include <iostream>
-#include <map>
-#include <sstream>
-#include <algorithm>
 #include <vector>
 
 using namespace std;
@@ -74,16 +67,5 @@ void sort(vector<pair<string, int>>& array, int size, int order) {
 
 }
 
-void set_user_input_dictionary(Dictionary_manager& dictionary) {
-
-	string text = InputString("Enter your text");
-
-	Dictionary word_counter;
-
-	word_counter.count_words(text);
-
-	dictionary.set_dictionary(word_counter);
-
-}
 
 
